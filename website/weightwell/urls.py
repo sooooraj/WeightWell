@@ -10,4 +10,5 @@ urlpatterns = [
     path("blogs",views.blogs, name="blogs"),
     path("diet",views.diet, name="diet"),
     path("workout",views.workout, name="workout"),
+    path("recipies",views.recipies, name="recipies"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

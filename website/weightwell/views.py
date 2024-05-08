@@ -17,3 +17,6 @@ def diet(request):
 
 def workout(request):
     return render(request,'workout.html')
+
+def recipies(request):
+    return render(request,'recipies.html')
