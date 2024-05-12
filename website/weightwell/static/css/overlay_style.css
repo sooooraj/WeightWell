@@ -1,0 +1,148 @@
+/* Scope CSS styles for the single-pf class */
+.custom-grid-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to new rows */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.custom-single-pf {
+    flex: 0 0 auto; /* Ensure items do not shrink or grow */
+    width: 20%; /* Set each item to occupy 20% of the container width */
+    padding: 0 10px; /* Add some space between items */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.custom-overlay {
+    position: relative;
+}
+
+.custom-overlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.custom-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.single-pf {
+    position: relative;
+}
+
+.single-pf .overlay {
+    position: relative;
+}
+
+.single-pf .overlay .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.single-pf .overlay .text h2 {
+    font-size: 24px;
+}
+
+.single-pf .overlay .text p {
+    font-size: 14px;
+}
+
+/* Custom grid container */
+/* .custom-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+} */
+
+/* Custom single-pf */
+/* .custom-single-pf {
+    position: relative;
+    margin-bottom: 20px;
+} */
+
+/* Custom overlay */
+/* .custom-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-overlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+} */
+
+/* Custom button */
+/* .custom-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* Popup container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 2; /* Ensure popup is above other content */
+}
+
+/* Popup content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
