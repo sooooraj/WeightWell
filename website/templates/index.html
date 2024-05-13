@@ -793,37 +793,36 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-12">
-						<form class="form" action="#">
+						<form id="appointment-form" class="form" method="post">
+							{% csrf_token %}
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="name" type="text" placeholder="Name">
+										<input name="name" id="appointment-name" type="text" placeholder="Name">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="email" type="email" placeholder="Email">
+										<input name="email" id="appointment-email" type="email" placeholder="Email">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="phone" type="text" placeholder="Phone">
+										<input name="phone" id="appointment-phone" type="text" placeholder="Phone">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current">Department</span>
-											<ul class="list">
-												<li data-value="2" class="option">Nutritionist</li>
-												<li data-value="3" class="option">Wellness Coach</li>
-												<li data-value="4" class="option">Counciling</li>
-											</ul>
-										</div>
+										<select name="department" id="appointment-department" class="nice-select form-control wide">
+											<option value="Nutritionist">Nutritionist</option>
+											<option value="Wellness Coach">Wellness Coach</option>
+											<option value="Counseling">Counseling</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-lg-12 col-md-12 col-12">
 									<div class="form-group">
-										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+										<textarea name="message" id="appointment-message" placeholder="Write Your Message Here....."></textarea>
 									</div>
 								</div>
 							</div>
@@ -831,7 +830,7 @@
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
 										<div class="button">
-											<button type="submit" class="btn">Book An Appointment</button>
+											<button id="appointment-submit" type="submit" class="btn">Book An Appointment</button>
 										</div>
 									</div>
 								</div>
@@ -840,7 +839,7 @@
 								</div>
 							</div>
 						</form>
-					</div>
+					</div>					
 					<div class="col-lg-6 col-md-12 ">
 						<div class="appointment-image">
 							<img src="{% static 'img/unhealthy.jpg' %}" alt="#">
@@ -895,13 +894,14 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Newsletter</h2>
-								<p>subscribe to our newsletter to get allour news in your inbox..</p>
-								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+								<p>Subscribe to our newsletter to get all our news in your inbox.</p>
+								<form id="newsletter-form" class="newsletter-inner">
+									{% csrf_token %}
+									<input name="email" id="newsletter-email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
 										onblur="this.placeholder = 'Your email address'" required="" type="email">
-									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+									<button id="newsletter-submit" class="button" type="submit"><i class="icofont icofont-paper-plane"></i></button>
 								</form>
-							</div>
+							</div>							
 						</div>
 					</div>
 				</div>
@@ -950,5 +950,7 @@
 		<script src="{% static 'js/bootstrap.min.js' %}"></script>
 		<!-- Main JS -->
 		<script src="{% static 'js/main.js' %}"></script>
+		<!-- mail js  -->
+		<script src="{% static 'js/mail.js' %}"></script>
     </body>
 </html>
