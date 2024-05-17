@@ -80,8 +80,9 @@
 		<ul class="pro-features">
 			<a class="get-pro" href="#">BMI</a>
 			<!-- <li class="title">Pro Version Features</li> -->
-			<div >
+			<div class="image-container" >
 				<img src="{% static 'img/bmi.jpg' %}" alt="#">
+				<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 			</div>
 			<li class="big-title">Unlock Optimal Health: Calculate Your BMI and Elevate Your Well-Being Today</li>
 			<div class="row">
@@ -104,9 +105,6 @@
 					<input id="result" name="result" type="text" placeholder="Your BMI is: " readonly>
 				</div>
 			</div>
-			<!-- <div >
-				<img src="{% static 'img/bmi-graph.jpg' %}" alt="#">
-			</div> -->
 		</ul>
 		<script>
 			function calculateBMI() {
@@ -154,13 +152,6 @@
 											<li class="active"><a href="#">Home </a></li>
 											<li><a href="{% url 'diet' %}">Diet </a></li>
 											<li><a href="{% url 'workout' %}">Workout Plans </a></li>
-											<!-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="404.html">404 Error</a></li>
-												</ul>
-											</li> -->
-											<!-- <li><a href="{% url 'blogs' %}">Blogs</i></a>
-											</li> -->
 											<li><a href="{% url 'contact' %}">Contact Us</a></li>
 										</ul>
 									</nav>
@@ -180,6 +171,7 @@
 			<div class="hero-slider">
 				<!-- Start Single Slider -->
 				<div class="single-slider" style="background-image:url('{% static 'img/fat_eating.jpg' %}')">
+					<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -188,7 +180,6 @@
 									<p>Begin Your Journey to a Healthier Lifestyle Today: Embrace the Power of Healthy Eating to Transform Your Well-Being and Flourish. </p>
 									<div class="button">
 										<a href="#appointment-section" class="btn">Get Appointment</a>
-										<!-- <a href="#" class="btn primary">Learn More</a> -->
 									</div>
 								</div>
 							</div>
@@ -198,6 +189,7 @@
 				<!-- End Single Slider -->
 				<!-- Start Single Slider -->
 				<div class="single-slider" style="background-image:url('{% static 'img/running.png' %}')">
+					<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -206,7 +198,6 @@
 									<p>Unlock Your Customized Workout Plan: Crafted by Our Expert Professionals for Your Fitness Journey. </p>
 									<div class="button">
 										<a href="#appointment-section" class="btn">Get Appointment</a>
-										<!-- <a href="#" class="btn primary">About Us</a> -->
 									</div>
 								</div>
 							</div>
@@ -216,6 +207,7 @@
 				<!-- Start End Slider -->
 				<!-- Start Single Slider -->
 				<div class="single-slider" style="background-image:url('{% static 'img/slider3.png' %}')">
+					<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -224,7 +216,6 @@
 									<p>Discover Your Personalized Exercise Blueprint: Handcrafted by Our Fitness Experts to Propel Your Wellness Voyage. </p>
 									<div class="button">
 										<a href="#appointment-section" class="btn">Get Appointment</a>
-										<!-- <a href="#" class="btn primary">Conatct Now</a> -->
 									</div>
 								</div>
 							</div>
@@ -238,65 +229,7 @@
 		
 		<!-- Start Schedule Area -->
 		<section class="schedule">
-			<!-- <div class="container"> -->
-				<!-- <div class="schedule-inner"> -->
-					<!-- <div class="row">
-						<div class="col-lg-4 col-md-6 col-12 "> -->
-							<!-- single-schedule -->
-							<!-- <div class="single-schedule first">
-								<div class="inner">
-									<div class="icon"> -->
-										<!-- <i class="fa fa-ambulance"></i> -->
-									<!-- </div>
-									<div class="single-content"> -->
-										<!-- <span>BMI Classification Table</span>
-										<h4>The following classes are used for adults who are at least 20 years old</h4> -->
-										<!-- <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p> -->
-										
-										<!-- <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a> -->
-									<!-- </div>
-								</div>
-							</div>
-						</div> -->
-						<!-- <div class="col-lg-4 col-md-6 col-12"> -->
-							<!-- single-schedule -->
-							<!-- <div class="single-schedule middle">
-								<div class="inner">
-									<div class="icon">
-										<i class="icofont-prescription"></i>
-									</div>
-									<div class="single-content">
-										<span>Fusce Porttitor</span>
-										<h4>Doctors Timetable</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-12 col-12"> -->
-							<!-- single-schedule -->
-							<!-- <div class="single-schedule last">
-								<div class="inner">
-									<div class="icon">
-										<i class="icofont-ui-clock"></i>
-									</div>
-									<div class="single-content">
-										<span>Donec luctus</span>
-										<h4>Opening Hours</h4>
-										<ul class="time-sidual">
-											<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-											<li class="day">Saturday <span>9.00-18.30</span></li>
-											<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-										</ul>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div> -->
-						<!-- </div>
-					</div>
-				</div>
-			</div> -->
+			
 		</section>
 		<!--/End Start schedule Area -->
 
@@ -307,7 +240,10 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>BMI Classification</h2>
-							<img src="{%static 'img/bmi-index.jpg' %}" alt="#">
+							<div class="image-container">
+								<img src="{%static 'img/bmi-index.jpg' %}" alt="#">
+								<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
+							</div>
 							<p>The above classes are used for adults who are at least 20 years old</p>
 						</div>
 					</div>
@@ -455,16 +391,8 @@
 						<!-- Start Choose Rights -->
 						<div class="choose-right">
 							<div class="video-image">
-								<!-- Video Animation -->
-								<!-- <div class="promo-video">
-									<div class="waves-block">
-										<div class="waves wave-1"></div>
-										<div class="waves wave-2"></div>
-										<div class="waves wave-3"></div>
-									</div>
-								</div> -->
-								<!--/ End Video Animation -->
-								<!-- <a href="https://www.youtube.com/embed/D--AtATgfyM?si=a56NyiL1uSEj5q5d" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
+								<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
+								
 							</div>
 						</div>
 						<!-- End Choose Rights -->
@@ -474,24 +402,6 @@
 		</section>
 		<!--/ End Why choose -->
 		
-		<!-- Start Call to action -->
-		<!-- <section class="call-action overlay" data-stellar-background-ratio="0.5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<div class="content">
-							<h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
-							<div class="button">
-								<a href="#" class="btn">Contact Now</a>
-								<a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-		<!--/ End Call to action -->
 		
 		
 		<!-- Start service -->
@@ -569,215 +479,6 @@
 		</section>
 		<!--/ End service -->
 		
-		<!-- Pricing Table -->
-		<!-- <section class="pricing-table section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>We Provide You The Best Treatment In Resonable Price</h2>
-							<img src="{% static 'img/section-img.png' %}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
-						</div>
-					</div>
-				</div>
-				<div class="row"> -->
-					<!-- Single Table -->
-					<!-- <div class="col-lg-4 col-md-12 col-12">
-						<div class="single-table"> -->
-							<!-- Table Head -->
-							<!-- <div class="table-head">
-								<div class="icon">
-									<i class="icofont icofont-ui-cut"></i>
-								</div>
-								<h4 class="title">Plastic Suggery</h4>
-								<div class="price">
-									<p class="amount">$199<span>/ Per Visit</span></p>
-								</div>	
-							</div> -->
-							<!-- Table List -->
-							<!-- <ul class=" table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Nullam interdum enim</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies metus</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
-							</ul>
-							<div class="table-bottom">
-								<a class="btn" href="#">Book Now</a>
-							</div> -->
-							<!-- Table Bottom -->
-						<!-- </div>
-					</div> -->
-					<!-- End Single Table-->
-					<!-- Single Table -->
-					<!-- <div class="col-lg-4 col-md-12 col-12">
-						<div class="single-table"> -->
-							<!-- Table Head -->
-							<!-- <div class="table-head">
-								<div class="icon">
-									<i class="icofont icofont-tooth"></i>
-								</div>
-								<h4 class="title">Teeth Whitening</h4>
-								<div class="price">
-									<p class="amount">$299<span>/ Per Visit</span></p>
-								</div>	
-							</div> -->
-							<!-- Table List -->
-							<!-- <ul class="table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies metus</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
-							</ul>
-							<div class="table-bottom">
-								<a class="btn" href="#">Book Now</a>
-							</div> -->
-							<!-- Table Bottom -->
-						<!-- </div>
-					</div> -->
-					<!-- End Single Table-->
-					<!-- Single Table -->
-					<!-- <div class="col-lg-4 col-md-12 col-12">
-						<div class="single-table"> -->
-							<!-- Table Head -->
-							<!-- <div class="table-head">
-								<div class="icon">
-									<i class="icofont-heart-beat"></i>
-								</div>
-								<h4 class="title">Heart Suggery</h4>
-								<div class="price">
-									<p class="amount">$399<span>/ Per Visit</span></p>
-								</div>	
-							</div> -->
-							<!-- Table List -->
-							<!-- <ul class="table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-								<li><i class="icofont icofont-ui-check"></i>Donec ultricies metus</li>
-								<li><i class="icofont icofont-ui-check"></i>Pellentesque eget nibh</li>
-							</ul>
-							<div class="table-bottom">
-								<a class="btn" href="#">Book Now</a> -->
-							<!-- </div> -->
-							<!-- Table Bottom -->
-						<!-- </div>
-					</div> -->
-					<!-- End Single Table-->
-				<!-- </div>	
-			</div>	
-		</section>	 -->
-		<!--/ End Pricing Table -->
-		
-		
-		
-		<!-- Start Blog Area -->
-		<!-- <section class="blog section" id="blog">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Keep up with Our Most Recent Blogs.</h2> -->
-							<!-- <img src="{% static 'img/section-img.png' %}" alt="#"> -->
-							<!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
-						<!-- </div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12"> -->
-						<!-- Single Blog -->
-						<!-- <div class="single-news">
-							<div class="news-head">
-								<img src="{% static 'img/blog1.jpg' %}" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">22 Aug, 2020</div>
-									<h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div> -->
-						<!-- End Single Blog -->
-					<!-- </div>
-					<div class="col-lg-4 col-md-6 col-12"> -->
-						<!-- Single Blog -->
-						<!-- <div class="single-news">
-							<div class="news-head">
-								<img src="{% static 'img/blog2.jpg' %}" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">15 Jul, 2020</div>
-									<h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div> -->
-						<!-- End Single Blog -->
-					<!-- </div>
-					<div class="col-lg-4 col-md-6 col-12"> -->
-						<!-- Single Blog -->
-						<!-- <div class="single-news">
-							<div class="news-head">
-								<img src="{% static 'img/blog3.jpg' %}" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">05 Jan, 2020</div>
-									<h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div> -->
-						<!-- End Single Blog -->
-					<!-- </div>
-				</div>
-			</div>
-		</section> -->
-		<!-- End Blog Area -->
-		
-		<!-- Start clients -->
-		<!-- <div class="clients overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<div class="owl-carousel clients-slider">
-							<div class="single-clients">
-								<img src="{% static 'img/client1.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client2.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client3.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client4.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client5.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client1.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client2.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client3.png' %}" alt="#">
-							</div>
-							<div class="single-clients">
-								<img src="{% static 'img/client4.png' %}" alt="#">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!--/Ens clients -->
 		
 		<!-- Start Appointment -->
 		<section id = "appointment-section" class="appointment">
@@ -786,8 +487,6 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>We Are Always Ready to Help You. Book An Appointment</h2>
-							<!-- <img src="{% static 'img/section-img.png' %}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
 						</div>
 					</div>
 				</div>
@@ -841,8 +540,9 @@
 						</form>
 					</div>					
 					<div class="col-lg-6 col-md-12 ">
-						<div class="appointment-image">
+						<div class="appointment-image image-container">
 							<img src="{% static 'img/unhealthy.jpg' %}" alt="#">
+							<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 						</div>
 					</div>
 				</div>
@@ -861,10 +561,7 @@
 								<!-- Social -->
 								<ul class="social">
 									<li><a href="#"><i class="icofont-facebook"></i></a></li>
-									<!-- <li><a href="#"><i class="icofont-google-plus"></i></a></li> -->
 									<li><a href="#"><i class="icofont-twitter"></i></a></li>
-									<!-- <li><a href="#"><i class="icofont-vimeo"></i></a></li> -->
-									<!-- <li><a href="#"><i class="icofont-pinterest"></i></a></li> -->
 								</ul>
 								<!-- End Social -->
 							</div>

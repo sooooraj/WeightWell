@@ -4163,3 +4163,39 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+/*=========================
+	Image Attributes CSS
+===========================*/
+.appointment-image {
+	position: relative;
+}
+.image-attribution {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 12px;
+	color: #555;
+	background-color: rgba(255, 255, 255, 0.7); /* Optional: Adds a semi-transparent background */
+	padding: 2px 5px; /* Optional: Adds some padding for better readability */
+	border-radius: 3px; /* Optional: Adds rounded corners to the background */
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center; /* Ensures the text is centered under the image */
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.image-attribution {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px; /* Adds some space between the image and the text */
+    text-align: right; /* Aligns the text to the right */
+}
+
+/*=========================
+	End of Image Attributes CSS
+===========================*/

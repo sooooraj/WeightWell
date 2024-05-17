@@ -62,50 +62,10 @@
         </div>
         <!-- End Preloader -->
 		
-		<!-- Get Pro Button -->
-		<!-- <ul class="pro-features">
-			<a class="get-pro" href="#">Get Pro</a>
-			<li class="big-title">Pro Version Available on Themeforest</li>
-			<li class="title">Pro Version Features</li>
-			<li>2+ premade home pages</li>
-			<li>20+ html pages</li>
-			<li>Color Plate With 12+ Colors</li>
-			<li>Sticky Header / Sticky Filters</li>
-			<li>Working Contact Form With Google Map</li>
-			<div class="button">
-				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
-				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
-			</div>
-		</ul> -->
+		
 	
 		<!-- Header Area -->
 		<header class="header" >
-			<!-- Topbar -->
-			<!-- <div class="topbar">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-md-5 col-12"> -->
-							<!-- Contact -->
-							<!-- <ul class="top-link">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Doctors</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul> -->
-							<!-- End Contact -->
-						<!-- </div>
-						<div class="col-lg-6 col-md-7 col-12"> -->
-							<!-- Top Contact -->
-							<!-- <ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
-							</ul> -->
-							<!-- End Top Contact -->
-						<!-- </div>
-					</div>
-				</div>
-			</div> -->
-			<!-- End Topbar -->
 			<!-- Header Inner -->
 			<div class="header-inner">
 				<div class="container">
@@ -129,24 +89,12 @@
 											<li><a href="{% url 'index' %}">Home </a></li>
 											<li class="active"><a href="#">Diet </a></li>
 											<li><a href="{% url 'workout' %}">Workout Plans </a></li>
-											<!-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="404.html">404 Error</a></li>
-												</ul>
-											</li> -->
-											<!-- <li><a href="{% url 'blogs' %}">Blogs</i></a>
-											</li> -->
 											<li><a href="{% url 'contact' %}">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>
 								<!--/ End Main Menu -->
 							</div>
-							<!-- <div class="col-lg-2 col-12">
-								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Appointment</a>
-								</div>
-							</div> -->
 						</div>
 					</div>
 				</div>
@@ -157,6 +105,7 @@
 		
 		<!-- Breadcrumbs -->
 		<div class="breadcrumbs overlay" style="background-image: url('../../static/img/diet.png');">
+			<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 			<div class="container">
 				<div class="bread-inner">
 					<div class="row">
@@ -238,8 +187,6 @@
 						<div class="section-title">
 							<h2>
                                 Let's explore some diet-related blogs.</h2>
-							<!-- <img src="{% static 'img/section-img.png' %}" alt="#"> -->
-							<!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
 						</div>
 					</div>
 				</div>
@@ -249,6 +196,7 @@
 						<div class="single-news">
 							<div class="news-head">
 								<img src="{% static 'img/food_blog1.jpg' %}" alt="#">
+								<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 							</div>
 							<div class="news-body">
 								<div class="news-content">
@@ -265,6 +213,7 @@
 						<div class="single-news">
 							<div class="news-head">
 								<img src="{% static 'img/food_blog4.jpg' %}" alt="#">
+								<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 							</div>
 							<div class="news-body">
 								<div class="news-content">
@@ -281,6 +230,7 @@
 						<div class="single-news">
 							<div class="news-head">
 								<img src="{% static 'img/food_blog3.jpg' %}" alt="#">
+								<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 							</div>
 							<div class="news-body">
 								<div class="news-content">
@@ -307,45 +257,22 @@
 								<div class="single-main">
 									<!-- News Head -->
 									<div class="news-head">
-										<img src="{% static 'img/food_blog1.jpg' %}" alt="#">
+										<div class="image-container">
+											<img src="{% static 'img/food_blog1.jpg' %}" alt="#">
+											<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
+										</div>
 									</div>
 									<!-- News Title -->
 									<h1 class="news-title">Should You Try Carb Cycling? Decoding the Facts.</h1>
-									<!-- Meta -->
-									<div class="meta">
-										<div class="meta-left">
-											<span class="author"><a href="#"><img src="{% static 'img/author1.jpg' %}" alt="#">Shewta Kumari</a></span>
-											<span class="date"><i class="fa fa-clock-o"></i>28 Mar 2024</span>
-										</div>
-										<div class="meta-right">
-											<!-- <span class="comments"><a href="#"><i class="fa fa-comments"></i>05 Comments</a></span> -->
-											<span class="views"><i class="fa fa-eye"></i>33K Views</span>
-										</div>
-									</div>
 									<!-- News Text -->
 									<div class="news-text">
 										<p>Carbohydrates, along with protein and fat, are vital macronutrients that give the body energy for overall health. While too many refined carbs can cause weight gain and health issues, the problem is not the carbs themselves but how much and what kind you eat. That’s why carb cycling, a new dietary approach, involves alternating between high and low-carb intake days instead of completely eliminating carbs.</p>
 										<p>While low-carb and ketogenic diets are effective for fat loss, they might be hard to maintain in the long term. That’s where carb cycling comes in, providing an alternative approach. Carb cycling involves customising carbohydrate intake based on personal dietary needs and fitness goals. In this way, you can determine when your body needs low, medium, or high-carb days.</p>
                                         <p>Keep reading to learn more about this approach and decide whether it suits your preferences and goals.</p>
-										<!-- <div class="image-gallery">
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-12">
-													<div class="single-image">
-														<img src="{% static 'img/blog2.jpg' %}" alt="#">
-													</div>
-												</div>
-												<div class="col-lg-6 col-md-6 col-12">
-													<div class="single-image">
-														<img src="{% static 'img/blog3.jpg' %}" alt="#">
-													</div>
-												</div>
-											</div>
-										</div> -->
+										
                                         <h2>What is Carb Cycling?</h2>
 										<p>Carb cycling, alternating between higher and lower carbohydrate intake days, tailors consumption to changing needs over weeks. This strategy ensures the body receives necessary carbohydrates for fuel and glycogen replenishment on high-carb days, relying on stored fat for energy on low-carb days. People also engage in calorie cycling, adjusting intake based on carb days, with some opting for intra-day carb cycling, focusing high-carb foods around workouts.</p>
-										<!-- <blockquote class="overlay">
-											<p>Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales</p>					
-										</blockquote> -->
+										
                                         <h2>Benefits of Carb Cycling</h2>
 										<p>Cycling between low-carb days and high-carb days feels less restrictive and easier than maintaining a consistently low-carb diet. This approach also provides additional benefits, including:</p>
                                         <ul>
@@ -398,143 +325,25 @@
 											<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 											<li class="pinterest"><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
 										</ul>
-										<!-- Next Prev -->
-										<!-- <ul class="prev-next">
-											<li class="prev"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-											<li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-										</ul> -->
-										<!--/ End Next Prev -->
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-12">
-								<div class="blog-comments">
-									<h2>All Comments</h2>
-									<div class="comments-body"> -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author1.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Afsana Mimi</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments left">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author2.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Naimur Rahman</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author3.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Suriya Molharta</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->											
-									<!-- </div>
-								</div>
-							</div> -->
-							<!-- <div class="col-12">
-								<div class="comments-form">
-									<h2>Leave Comments</h2> -->
-									<!-- Contact Form -->
-									<!-- <form class="form" method="post" action="mail/mail.php">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-user"></i>
-													<input type="text" name="first-name" placeholder="First name" required="required">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-envelope"></i>
-													<input type="text" name="last-name" placeholder="Last name" required="required">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-envelope"></i>
-													<input type="email" name="email" placeholder="Your Email" required="required">
-												</div>
-											</div>
-											<div class="col-12">
-												<div class="form-group message">
-													<i class="fa fa-pencil"></i>
-													<textarea name="message" rows="7" placeholder="Type Your Message Here" ></textarea>
-												</div>
-											</div>
-											<div class="col-12">
-												<div class="form-group button">	
-													<button type="submit" class="btn primary"><i class="fa fa-send"></i>Submit Comment</button>
-												</div>
-											</div>
-										</div>
-									</form> -->
-									<!--/ End Contact Form -->
-								<!-- </div>
-							</div> -->
 						</div>
 					</div>
 					<div class="col-lg-4 col-12">
 						<div class="main-sidebar">
-							<!-- Single Widget -->
-							<!-- <div class="single-widget search">
-								<div class="form">
-									<input type="email" placeholder="Search Here...">
-									<a class="button" href="#"><i class="fa fa-search"></i></a>
-								</div>
-							</div> -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!-- <div class="single-widget category">
-								<h3 class="title">Blog Categories</h3>
-								<ul class="categor-list">
-									<li><a href="{% url 'blogs' %}">Workout</a></li>
-									<li><a href="{% url 'blogs' %}">Diet</a></li>
-									<li><a href="{% url 'blogs' %}">Health and Lifestyle</a></li>
-								</ul>
-							</div> -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
+							
 							<div class="single-widget recent-post">
 								<h3 class="title">Recent post</h3>
 								<!-- Single Post -->
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog1.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection1">Should You Try Carb Cycling? Decoding the Facts.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Mar 28, 2020</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
@@ -542,13 +351,11 @@
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog4.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection2">Foods like grapefruit, celery, chilli and caffeine are able to burn fat”. Is this really true?</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Apr 05, 2024</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>59</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
@@ -556,33 +363,15 @@
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog3.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection3">Debunking health myths: The truth about carbs - My PHAT Life.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>jan 05, 2024</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
 							</div>
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!-- <div class="single-widget side-tags">
-								<h3 class="title">Tags</h3>
-								<ul class="tag">
-									<li><a href="#">business</a></li>
-									<li><a href="#">wordpress</a></li>
-									<li><a href="#">html</a></li>
-									<li><a href="#">multipurpose</a></li>
-									<li><a href="#">education</a></li>
-									<li><a href="#">template</a></li>
-									<li><a href="#">Ecommerce</a></li>
-								</ul>
-							</div> -->
 							<!--/ End Single Widget -->
 						</div>
 					</div>
@@ -601,43 +390,21 @@
 								<div class="single-main">
 									<!-- News Head -->
 									<div class="news-head">
-										<img src="{% static 'img/food_blog4.jpg' %}" alt="#">
+										<div class="image-container">
+											<img src="{% static 'img/food_blog4.jpg' %}" alt="#">
+											<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
+										</div>
 									</div>
 									<!-- News Title -->
 									<h1 class="news-title">Foods like grapefruit, celery, chilli and caffeine are able to burn fat”. Is this really true?</h1>
-									<!-- Meta -->
-									<div class="meta">
-										<div class="meta-left">
-											<span class="author"><a href="#"><img src="{% static 'img/author2.jpg' %}" alt="#">Aditi Shenai</a></span>
-											<span class="date"><i class="fa fa-clock-o"></i>5 Apr 2024</span>
-										</div>
-										<div class="meta-right">
-											<!-- <span class="comments"><a href="#"><i class="fa fa-comments"></i>05 Comments</a></span> -->
-											<span class="views"><i class="fa fa-eye"></i>33K Views</span>
-										</div>
-									</div>
+									
 									<!-- News Text -->
 									<div class="news-text">
 										<p>We've all seen the headlines: "Grapefruit burns belly fat!" "Celery is a negative calorie food!" But are these claims really true? The truth is, there's no magic bullet for weight loss. Even though some foods can contribute to a healthy diet, they are unable to eliminate fat on their own. Let us examine the science underlying these common weight loss myths in more detail:</p>
-										<!-- <div class="image-gallery">
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-12">
-													<div class="single-image">
-														<img src="{% static 'img/blog2.jpg' %}" alt="#">
-													</div>
-												</div>
-												<div class="col-lg-6 col-md-6 col-12">
-													<div class="single-image">
-														<img src="{% static 'img/blog3.jpg' %}" alt="#">
-													</div>
-												</div>
-											</div>
-										</div> -->
+										
                                         <h2>Myth #1: Grapefruit is a Fat-Burning Fruit</h2>
 										<p>Although grapefruit is a nutrient-dense and delicious fruit, its ability to burn fat is greatly overstated. There is some evidence to suggest that grapefruit may assist in controlling insulin levels, which may have an indirect effect on managing weight. But grapefruit doesn't burn fat directly, and eating too much of it can interfere with some medications.</p>
-										<!-- <blockquote class="overlay">
-											<p>Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales</p>					
-										</blockquote> -->
+										
                                         <h2>Myth #2: Celery is a Negative Calorie Food</h2>
 										<p>Celery is a low-calorie food, but it's not negative calories. There is a tiny amount of calories burned when chewing celery, but not nearly enough to make up for what you eat. Although celery is an excellent source of fibre and water, it is not a miracle cure for weight loss.</p>
                                         <h2>Myth #3: Chili Peppers Torch Fat</h2>
@@ -653,129 +420,16 @@
 											<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 											<li class="pinterest"><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
 										</ul>
-										<!-- Next Prev -->
-										<!-- <ul class="prev-next">
-											<li class="prev"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-											<li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-										</ul> -->
-										<!--/ End Next Prev -->
+										
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-12">
-								<div class="blog-comments">
-									<h2>All Comments</h2>
-									<div class="comments-body"> -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author1.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Afsana Mimi</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments left">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author2.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Naimur Rahman</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author3.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Suriya Molharta</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->											
-									<!-- </div>
-								</div>
-							</div> -->
-							<!-- <div class="col-12">
-								<div class="comments-form">
-									<h2>Leave Comments</h2> -->
-									<!-- Contact Form -->
-									<!-- <form class="form" method="post" action="mail/mail.php">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-user"></i>
-													<input type="text" name="first-name" placeholder="First name" required="required">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-envelope"></i>
-													<input type="text" name="last-name" placeholder="Last name" required="required">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-envelope"></i>
-													<input type="email" name="email" placeholder="Your Email" required="required">
-												</div>
-											</div>
-											<div class="col-12">
-												<div class="form-group message">
-													<i class="fa fa-pencil"></i>
-													<textarea name="message" rows="7" placeholder="Type Your Message Here" ></textarea>
-												</div>
-											</div>
-											<div class="col-12">
-												<div class="form-group button">	
-													<button type="submit" class="btn primary"><i class="fa fa-send"></i>Submit Comment</button>
-												</div>
-											</div>
-										</div>
-									</form> -->
-									<!--/ End Contact Form -->
-								<!-- </div>
-							</div> -->
+							
 						</div>
 					</div>
 					<div class="col-lg-4 col-12">
 						<div class="main-sidebar">
-							<!-- Single Widget -->
-							<!-- <div class="single-widget search">
-								<div class="form">
-									<input type="email" placeholder="Search Here...">
-									<a class="button" href="#"><i class="fa fa-search"></i></a>
-								</div>
-							</div> -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!-- <div class="single-widget category">
-								<h3 class="title">Blog Categories</h3>
-								<ul class="categor-list">
-									<li><a href="{% url 'blogs' %}">Workout</a></li>
-									<li><a href="{% url 'blogs' %}">Diet</a></li>
-									<li><a href="{% url 'blogs' %}">Health and Lifestyle</a></li>
-								</ul>
-							</div> -->
-							<!--/ End Single Widget -->
+							
 							<!-- Single Widget -->
 							<div class="single-widget recent-post">
 								<h3 class="title">Recent post</h3>
@@ -783,13 +437,11 @@
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog1.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection1">Should You Try Carb Cycling? Decoding the Facts.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Mar 28, 2020</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
@@ -797,13 +449,11 @@
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog4.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection2">Foods like grapefruit, celery, chilli and caffeine are able to burn fat”. Is this really true?</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Apr 05, 2024</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>59</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
@@ -814,31 +464,13 @@
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection3">Debunking health myths: The truth about carbs - My PHAT Life.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>jan 05, 2024</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
 							</div>
 							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!-- <div class="single-widget side-tags">
-								<h3 class="title">Tags</h3>
-								<ul class="tag">
-									<li><a href="#">business</a></li>
-									<li><a href="#">wordpress</a></li>
-									<li><a href="#">html</a></li>
-									<li><a href="#">multipurpose</a></li>
-									<li><a href="#">education</a></li>
-									<li><a href="#">template</a></li>
-									<li><a href="#">Ecommerce</a></li>
-								</ul>
-							</div> -->
-							<!--/ End Single Widget -->
+							
 						</div>
 					</div>
 				</div>
@@ -856,7 +488,10 @@
 								<div class="single-main">
 									<!-- News Head -->
 									<div class="news-head">
-										<img src="{% static 'img/food_blog3.jpg' %}" alt="#">
+										<div class="image-container">
+											<img src="{% static 'img/food_blog3.jpg' %}" alt="#">
+											<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
+										</div>
 									</div>
 									<!-- News Title -->
 									<h1 class="news-title">Debunking health myths: The truth about carbs - My PHAT Life.</h1>
@@ -876,24 +511,9 @@
 										<p> Carbs (carbohydrates) are found in a variety of foods, such as fruits, vegetables, bread, and pasta. Your body uses the foods you eat to produce glucose. Glucose is the body’s main source of energy. Now, when I say carbs are not the enemy, I mean good carbs –the carbs that fuel the body to give energy. There are what you would call “bad carbs” out there as well, which are carbs that have been processed and have added sugar such as white bread, cakes, cookies, etc.</p>
 										<p>Eating a low carb diet helps to get the weight off quickly. But while you are losing weight on your low carb diet, you are not losing fat. On a low carb diet, you are simply losing water weight as your body breaks down stored carbohydrates. Once you begin eating carbs, you will gain the weight back. A low carb diet is not a normal balance of nutrition. I was a low carb chic for a little over a year and I lost a great deal of weight! Most days I felt great and then there were days that my energy level was depleted, on top of the fact that I worked out 5-6 days a week. It was not until I started working with registered dieticians, personal trainers, and my professors here at UAB that I realized I needed carbs to help my body with losing weight. Having a healthy balance of carbs in my diet gave me more energy to crush my workouts and burn more fat.</p>
                                         <p>“Did you say carbs help you burn fat?” Why, yes, I did! Carbs not only fuel the body but aid in fat metabolism. Have you ever heard the phrase “fat burns in a carbohydrate flame”? Your body requires glycogen (glucose) to burn fat molecules for energy. Where do we get glucose from? CARBS! Once I started eating carbs again, I did gain some weight back. But with cardio, strength training, and choosing healthier carbs, I have been able to and still working towards the healthy/fit body that I want.</p>
-										<!-- <div class="image-gallery">
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-12">
-													<div class="single-image">
-														<img src="{% static 'img/blog2.jpg' %}" alt="#">
-													</div>
-												</div>
-												<div class="col-lg-6 col-md-6 col-12">
-													<div class="single-image">
-														<img src="{% static 'img/blog3.jpg' %}" alt="#">
-													</div>
-												</div>
-											</div>
-										</div> -->
+										
 										<p>Carbs have many other benefits as well. Carbs fuel the brain, kidneys, heart muscles, and central nervous system. The fiber found in carbs helps with digestion and keeps you full longer. It is all about choosing the right carbs. Choose carbs that are full of nutrients. Here are few healthy carbohydrate rich foods:</p>
-										<!-- <blockquote class="overlay">
-											<p>Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales</p>					
-										</blockquote> -->
+										
                                         <ul>
                                             <li>
                                                 <p><b>Whole grains:</b> quinoa, amaranth, barley, brown rice, oatmeal, whole-grain pasta, and whole-grain breakfast cereals.</p>
@@ -922,129 +542,16 @@
 											<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 											<li class="pinterest"><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
 										</ul>
-										<!-- Next Prev -->
-										<!-- <ul class="prev-next">
-											<li class="prev"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-											<li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-										</ul> -->
-										<!--/ End Next Prev -->
+										
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-12">
-								<div class="blog-comments">
-									<h2>All Comments</h2>
-									<div class="comments-body"> -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author1.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Afsana Mimi</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments left">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author2.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Naimur Rahman</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->
-										<!-- Single Comments -->
-										<!-- <div class="single-comments">
-											<div class="main">
-												<div class="head">
-													<img src="{% static 'img/author3.jpg' %}" alt="#"/>
-												</div>
-												<div class="body">
-													<h4>Suriya Molharta</h4>
-													<div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-													<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-													<a href="#"><i class="fa fa-reply"></i>replay</a>
-												</div>
-											</div>
-										</div>		 -->
-										<!--/ End Single Comments -->											
-									<!-- </div>
-								</div>
-							</div> -->
-							<!-- <div class="col-12">
-								<div class="comments-form">
-									<h2>Leave Comments</h2> -->
-									<!-- Contact Form -->
-									<!-- <form class="form" method="post" action="mail/mail.php">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-user"></i>
-													<input type="text" name="first-name" placeholder="First name" required="required">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-envelope"></i>
-													<input type="text" name="last-name" placeholder="Last name" required="required">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-12">
-												<div class="form-group">
-													<i class="fa fa-envelope"></i>
-													<input type="email" name="email" placeholder="Your Email" required="required">
-												</div>
-											</div>
-											<div class="col-12">
-												<div class="form-group message">
-													<i class="fa fa-pencil"></i>
-													<textarea name="message" rows="7" placeholder="Type Your Message Here" ></textarea>
-												</div>
-											</div>
-											<div class="col-12">
-												<div class="form-group button">	
-													<button type="submit" class="btn primary"><i class="fa fa-send"></i>Submit Comment</button>
-												</div>
-											</div>
-										</div>
-									</form> -->
-									<!--/ End Contact Form -->
-								<!-- </div>
-							</div> -->
+							
 						</div>
 					</div>
 					<div class="col-lg-4 col-12">
 						<div class="main-sidebar">
-							<!-- Single Widget -->
-							<!-- <div class="single-widget search">
-								<div class="form">
-									<input type="email" placeholder="Search Here...">
-									<a class="button" href="#"><i class="fa fa-search"></i></a>
-								</div>
-							</div> -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!-- <div class="single-widget category">
-								<h3 class="title">Blog Categories</h3>
-								<ul class="categor-list">
-									<li><a href="{% url 'blogs' %}">Workout</a></li>
-									<li><a href="{% url 'blogs' %}">Diet</a></li>
-									<li><a href="{% url 'blogs' %}">Health and Lifestyle</a></li>
-								</ul>
-							</div> -->
-							<!--/ End Single Widget -->
+							
 							<!-- Single Widget -->
 							<div class="single-widget recent-post">
 								<h3 class="title">Recent post</h3>
@@ -1052,13 +559,11 @@
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog1.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection1">Should You Try Carb Cycling? Decoding the Facts.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Mar 28, 2020</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
@@ -1066,13 +571,11 @@
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog4.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection2">Foods like grapefruit, celery, chilli and caffeine are able to burn fat”. Is this really true?.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Apr 05, 2024</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>59</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
@@ -1080,34 +583,17 @@
 								<div class="single-post">
 									<div class="image">
 										<img src="{% static 'img/food_blog3.jpg' %}" alt="#">
+										<p class="image-attribution">Image by <a href="https://www.freepik.com/free-vector/flat-international-chefs-day-illustration_31151811.htm#fromView=image_search_similar&page=1&position=39&uuid=224a670f-c113-4749-9643-a3c1066c3a79">Freepik</a></p>
 									</div>
 									<div class="content">
 										<h5><a href="#" class="toggle-news" data-target="newsSection3">Debunking health myths: The truth about carbs - My PHAT Life.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>jan 05, 2024</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
-										</ul>
+										
 									</div>
 								</div>
 								<!-- End Single Post -->
 							</div>
 							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!-- <div class="single-widget side-tags">
-								<h3 class="title">Tags</h3>
-								<ul class="tag">
-									<li><a href="#">business</a></li>
-									<li><a href="#">wordpress</a></li>
-									<li><a href="#">html</a></li>
-									<li><a href="#">multipurpose</a></li>
-									<li><a href="#">education</a></li>
-									<li><a href="#">template</a></li>
-									<li><a href="#">Ecommerce</a></li>
-								</ul>
-							</div> -->
-							<!--/ End Single Widget -->
+							
 						</div>
 					</div>
 				</div>
@@ -1152,10 +638,7 @@
 								<!-- Social -->
 								<ul class="social">
 									<li><a href="#"><i class="icofont-facebook"></i></a></li>
-									<!-- <li><a href="#"><i class="icofont-google-plus"></i></a></li> -->
 									<li><a href="#"><i class="icofont-twitter"></i></a></li>
-									<!-- <li><a href="#"><i class="icofont-vimeo"></i></a></li> -->
-									<!-- <li><a href="#"><i class="icofont-pinterest"></i></a></li> -->
 								</ul>
 								<!-- End Social -->
 							</div>
