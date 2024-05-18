@@ -7,6 +7,7 @@ $(document).ready(function() {
     var bodyTexts = [
         {
             title: "Build Your Own Greek Yogurt Parfait",
+            link: "https://www.freepik.com/free-photo/strawberries-layer-dessert_3355113.htm#fromView=image_search&page=1&position=0&uuid=2c6ae514-aa93-4005-aa17-2834936c29c9",
             content: `
                 <p>Transform your breakfast routine with a vibrant and customizable parfait!</p>
                 <p><b>Ingredients:</b> Greek yogurt (150 calories), mixed berries (50 calories), granola (120 calories).</p>
@@ -29,6 +30,7 @@ $(document).ready(function() {
         },        
         {
             title: "Wrap It Up with a Chicken Salad Delight",
+            link: "https://www.freepik.com/free-photo/caesar-salad-chicken-tomato-lettuce-parmesan-anchovies-side-view_7652156.htm#fromView=image_search&page=1&position=0&uuid=ced8c931-0c0f-4cf0-a41a-60e9eb39ed4e",
             content: `
                 <p>This protein-packed wrap is perfect for a satisfying lunch or light dinner.</p>
                 <p><b>Ingredients:</b> Whole grain tortilla (200 calories), grilled chicken breast (165 calories), lettuce (15 calories), tomato (22 calories), and avocado (160 calories).</p>
@@ -56,6 +58,7 @@ $(document).ready(function() {
         },
         {
             title: "Quinoa and Black Bean Salad",
+            link: "https://www.freepik.com/free-photo/healthy-salad-bowl-with-quinoa-vegetables-fruit-generated-by-ai_43265872.htm#fromView=image_search&page=1&position=0&uuid=9eb17267-7a13-4568-85d9-124d1f40e9bf",
             content: `
                 <p>This protein-rich salad is bursting with flavor and perfect for a light lunch or side dish.</p>
                 <p><b>Ingredients:</b> Cooked quinoa (220 calories), black beans (114 calories), cherry tomatoes (22 calories), cucumber (30 calories), lime juice (4 calories), cilantro (2 calories).</p>
@@ -83,6 +86,7 @@ $(document).ready(function() {
         },
         {
             title: "Baked Salmon with Asparagus Perfection",
+            link: "https://www.freepik.com/free-photo/baked-salmon-garnished-with-asparagus-tomatoes-with-herbs_7122701.htm#fromView=image_search&page=1&position=25&uuid=c7bb733d-c2d6-4d0c-a4bd-1f2a545985b2",
             content: `
                 <p>This elegant dish is surprisingly easy to prepare and perfect for a weeknight dinner.</p>
                 <p><b>Ingredients:</b> Salmon fillet (206 calories), asparagus (27 calories), olive oil (119 calories), lemon juice (4 calories).</p>
@@ -104,6 +108,7 @@ $(document).ready(function() {
         },
         {
             title: "Tofu Scramble Scramble Up Some Goodness",
+            link: "https://www.freepik.com/free-photo/scrambled-eggs-veggies-salad_6896993.htm#fromView=image_search&page=1&position=19&uuid=b4cf20fd-3b12-4e11-a570-3aa96e71cecf",
             content: `
                 <p>This vegetarian dish is a protein-packed alternative to traditional scrambled eggs.</p>
                 <p><b>Ingredients:</b> Firm tofu (70 calories), brown rice (215 calories), mixed vegetables (55 calories), soy sauce (8 calories), sesame oil (119 calories).</p>
@@ -133,6 +138,7 @@ $(document).ready(function() {
         },
         {
             title: "Egg and Vegetable Omelette: A Colorful Breakfast Symphony",
+            link: "https://www.freepik.com/free-photo/high-angle-breakfast-omelette-pan-with-tomatoes-herbs_6671390.htm#fromView=image_search&page=1&position=3&uuid=e95f9752-d0a9-4af1-97f1-ca144a9031d9",
             content: `
                 <p>Start your day with a vibrant and protein-packed omelette.</p>
                 <p><b>Ingredients:</b> Eggs (155 calories), spinach (7 calories), bell pepper (24 calories), onion (30 calories), cheese (100 calories).</p>
@@ -162,6 +168,7 @@ $(document).ready(function() {
         },
         {
             title: "Lentil Soup: Hearty and Comforting (337 calories, 45 minutes)",
+            link: "https://www.freepik.com/free-photo/top-view-delicious-vegetable-soup-inside-round-plate-with-bread-dark-blue-desk_11543979.htm#fromView=image_search&page=1&position=3&uuid=be07c334-de7f-4a7b-976e-f84bdba2ff12",
             content: `
                 <p>This hearty soup is a budget-friendly and nourishing meal option.</p>
                 <p><b>Ingredients:</b> Lentils (230 calories), vegetable broth (5 calories), carrots (52 calories), onions (46 calories), garlic (4 calories).</p>
@@ -187,6 +194,7 @@ $(document).ready(function() {
         },
         {
             title: "Protein Power Shake: A Quick and Nutritious Refuel",
+            link: "https://www.freepik.com/free-photo/still-life-tasty-summer-smoothie_4725688.htm#fromView=image_search&page=1&position=0&uuid=ed710526-9811-4ca3-91d1-460583f75e3f",
             content: `
                 <p>This protein shake is a convenient and delicious way to refuel after a workout or as a quick and healthy snack.</p>
                 <p><b>Ingredients:</b> Protein powder (120 calories), almond milk (30 calories), banana (105 calories), spinach (7 calories).</p>
@@ -312,6 +320,7 @@ $(document).ready(function() {
         slides.hide().eq(index).show();
         updateBodyText(index);
         updateRecipeList(index);
+        updateImageLink(index);
     }
 
     function updateBodyText(index) {
@@ -324,6 +333,11 @@ $(document).ready(function() {
             return '<li><span>' + item.label + ':</span> ' + item.value + '</li>';
         });
         $('.recipe-list').html(currentRecipeData.join(''));
+    }
+
+    function updateImageLink(index) {
+        var currentBodyText = bodyTexts[index];
+        $('.image-attribution a').attr('href', currentBodyText.link);
     }
 
     // Initially show the first slide
