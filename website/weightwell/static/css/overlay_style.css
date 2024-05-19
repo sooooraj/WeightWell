@@ -74,46 +74,7 @@
     font-size: 14px;
 }
 
-/* Custom grid container */
-/* .custom-grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    max-width: 1200px;
-} */
 
-/* Custom single-pf */
-/* .custom-single-pf {
-    position: relative;
-    margin-bottom: 20px;
-} */
-
-/* Custom overlay */
-/* .custom-overlay {
-    position: relative;
-    overflow: hidden;
-}
-
-.custom-overlay img {
-    width: 100%;
-    height: auto;
-    display: block;
-} */
-
-/* Custom button */
-/* .custom-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-} */
 
 /* Popup container */
 .popup {
